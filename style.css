@@ -9,16 +9,16 @@
     background: rgba( 0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
-    z-index: 9998;
+    z-index: 9997;
 }
 .block{
     position: fixed;
     top: 50%;
     left: 50%;
-    margin: -40% 0 0 -40%;
+    margin: -360px 0 0 -640px;
     border: 1px solid #402eeb;
     background: #ffffff;
-    width: 80%;
-    height: 80%;
-    z-index: 9999;
+    width: 1280px;
+    height: 720px;
+    z-index: 9998;
 }
