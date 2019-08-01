@@ -1,0 +1,619 @@
+/**nomal**/
+body{
+  background:#fff;
+  margin:0;
+ font-family:'微軟正黑體',Verdana;
+}
+
+footer{
+  background-color:#9ecd53;
+  padding:10px 0;
+}
+
+footer p{
+  color:#000;
+  text-align:center;
+  margin-bottom: 0;
+  font-size:14px;
+}
+a{
+  transition: 0.3s;
+}
+a:hover{
+  text-decoration: unset;
+  color:#b3e367 !important;
+}
+
+img{
+  width:100%;
+  vertical-align: middle;
+}
+h4{
+  font-weight:bold;
+  color:#ffffff;
+  font-size:50pt;
+  font-family:Verdana;
+}
+.row{
+  clear:both;
+}
+
+.carousel-control-prev:hover {
+background-image: linear-gradient(to right, rgba(0,0,0,.3) 0, rgba(0,0,0,.0001) 100%);
+}
+.carousel-control-next:hover{
+  background-image: linear-gradient(to right, rgba(0,0,0,.0001) 0, rgba(0,0,0,.3) 100%);
+}
+@media (max-width: 576px){
+.container {
+    max-width: 540px;
+}
+}
+@media (min-width: 768px){
+.container {
+    max-width: 750px;
+}
+  }
+@media (min-width: 992px){
+.container {
+    max-width: 980px;
+}
+  }
+@media (min-width: 1200px){
+.container {
+    max-width: 1170px;
+}
+}
+@media (min-width: 1360px){
+.container {
+    width: 1360px;
+}
+}
+/**nomal**/
+/*navar*/
+.navbar-fixed-top{
+  position:fixed;
+  z-index:100;
+  width:100%;
+}
+.navbar .container{
+  display: block;
+}
+.navbar-toggle{
+  position:relative;
+  float:right;
+  color: #fff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.navbar{
+  background-color:#000;
+  opacity:0.7;
+  /*min-height: 50px;*/
+  padding:0;
+  display:block;
+ top: 0;
+}
+
+.collapse{
+  clear: both;
+}
+#navbar-collapse{
+  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.nav{
+ text-align: center;
+ padding-bottom:18px;
+ 
+}
+.nav>li{
+ float: left;
+ padding:12px 10px 0 10px;
+ 
+}
+.nav-text{
+  color:#fff !important;
+  font-weight: bold;
+}
+
+@media (min-width: 768px){
+.navbar-toggle{
+  display:none;
+} 
+.navbar-collapse {
+    display: block!important;
+  }
+  .nav{
+    display: block;
+    /*margin-bottom: 8px;*/
+  }
+  .navbar-right{
+  float:right;
+}
+}
+/*navar*/
+
+/*banner*/
+.banner{
+  margin-top:54px;
+}
+/*banner*/
+/*intro*/
+.intro{
+background:url(sq.png) no-repeat center;
+background-size: cover !important;
+padding-bottom: 100px;
+}
+
+.intro-text{
+  background:rgba(80,80,80,1);
+  padding:20px 30px;
+  margin-left:-6%;
+}
+
+.intro-text h4:after {/*小於768情況下*/
+  content: '';
+  width: 369px;
+  height: 5px;
+  background: #fff;
+  position: absolute;/*要給位置才會出現*/
+  left: 15px;/*設定位置*/
+  top: 84px;
+}
+.intro-text p{
+ font-size:16px;
+  color:#fff;
+  line-height: 1.8;
+}
+
+
+@media (min-width: 768px){
+  .intro{
+    padding-bottom: 250px;
+  }
+.intro-photo{
+  /*left: 50%;*/
+  right:5%;
+  padding:0;
+}
+  .intro-content{
+   /* padding:0;*/
+  }
+.intro-text{
+  position:relative;
+  top:150px;
+  left:5%;
+  }  
+.intro-text h4:before {/*大於768情況下*/
+  content: '';
+  width: 289px;
+  height: 5px;
+  background: #fff;
+  position: absolute;/*要給位置才會出現*/
+  left: 0;/*設定位置*/
+  top: 84px;
+}    
+.intro-text h4:after {/*大於768情況下*/
+  content: '';
+  width: 88px;
+  height: 5px;
+  background: #fff;
+  position: absolute;/*要給位置才會出現*/
+  left: 0;/*設定位置*/
+  top: 165px;
+}  
+  }
+@media (min-width: 992px){
+.intro-text h4:before {/*大於992情況下*/
+  content: '';
+  width: 0;
+  height: 0;
+  background: #fff;
+  
+}  
+.intro-text h4:after {/*大於992情況下*/
+  content: '';
+  width: 369px;
+  height: 5px;
+  background: #fff;
+  position: absolute;/*要給位置才會出現*/
+  left: 0;/*設定位置*/
+  top: 84px;
+}  
+  }
+@media (max-width: 497px){
+  
+.intro-text h4:before {/*小於497情況下*/
+ content: '';
+  width: 289px;
+  height: 5px;
+  background: #fff;
+  position: absolute;/*要給位置才會出現*/
+  left: 15px;/*設定位置*/
+  top: 84px;
+}  
+.intro-text h4:after {/*小於497情況下*/
+  content: '';
+  width: 88px;
+  height: 5px;
+  background: #fff;
+  position: absolute;/*要給位置才會出現*/
+  left: 15px;/*設定位置*/
+  top: 165px;
+}  
+  }
+/*intro*/
+/*life*/
+.life{
+  background-color:#fff;
+  padding-bottom:80px;
+}
+.life-item{
+  padding:80px 10px 10px 10px;
+  text-align:center;
+}
+.circle{
+  margin:0px auto !important;
+  border-radius: 50%;
+  background-color: #b3e367;
+  width:220px;
+  height:220px;
+  text-align: center;
+  overflow: hidden;
+  padding:50px 10px;
+  border: 5px solid #b3e367; 
+  transition: 0.3s;
+}
+
+.circle:hover{
+ border: 5px solid #b3e367; 
+ background-color: #d1fe8a; 
+ box-shadow: 0px 3px 15px rgba(0,0,0,0.3);/*陰影 離x距離 離y距離 寬度(大小) 顏色*/
+ transform: translateY(-10px);/*位移*/
+}
+
+.circle img{
+  width:50px;
+  padding-bottom: 17px;
+  
+}
+.circletitle{
+     font-weight: bold;
+    font-size: 18px;
+     letter-spacing: 5px;
+  transition: 0.3s;
+}
+.circle:hover .circletitle {
+ color:#222222;
+}
+.circletext{
+  font-size: 15px;
+  transition: 0.3s;
+}
+.circle:hover .circletext {
+ color:#222222;
+}
+
+
+.circle p{
+  margin:0 0 5px 0;
+  color:#fff;
+}
+
+@media (max-width: 576px){/*小於576的情況*/
+  .life-item{
+    margin:0 auto !important;
+  }
+  .circle{
+  width:220px;
+  height:220px;
+  padding:50px 10px;
+}
+
+.circle img{
+  width:50px;
+}
+}
+
+@media (min-width: 768px){/*大於768的情況*/
+  .circle{
+  width:180px;
+  height:180px;
+  padding:30px 10px;
+}
+
+.circle img{
+  width:40px;
+}
+}
+@media (min-width: 992px){/*大於992的情況*/
+  .circle{
+  width:220px;
+  height:220px;
+  padding:50px 10px;
+}
+ 
+.circle img{
+  width:50px;
+}
+}
+/*life*/
+/*jobs*/
+.jobs{
+  background-color:#e1edfb;
+  padding:50px 0;
+}
+.jobs .row{
+  padding-bottom:50px;
+  
+}
+.job-logo{
+  padding:0;
+  z-index:5;
+  position: relative;
+  left:40px;
+}
+.job-logo img{
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.3);/*陰影 離x距離 離y距離 寬度(大小) 顏色*/
+}
+.job-content{
+  background:rgba(80,80,80,1);
+  padding:20px 30px 20px 100px;
+  position: relative;
+  top: 30px;
+  right:40px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.3);/*陰影 離x距離 離y距離 寬度(大小) 顏色*/
+}
+.job-content h5,p{
+  color:#fff;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.job-title{
+  font-size:20px;
+  /*font-weight:bold;*/
+}
+
+@media (max-width: 768px){/*小於768的情況*/
+ .job-logo{
+  z-index:0;
+   left:0;
+   width:80%;
+   margin:0 auto;
+}
+  .job-content{
+  top: 0;
+  right:0;
+  padding:20px 30px;
+    width:80%;
+   margin:0 auto;
+}
+ 
+}
+/*jobs*/
+/*skills*/
+.skills{
+  background-color:#fff;
+  padding:40px 30px;
+}
+.skills .container{
+  width:90%;
+}
+.skills-text{
+  padding-left:30px;
+}
+.skills-text h4{
+  color:#94c257;
+  font-size:50pt;
+  font-weight:bold;
+  font-family:Verdana;
+}
+.skills-text h4:before {
+ content:'';
+  width: 248px;
+  height: 5px;
+  background: #94c257;
+  position: absolute;/*要給位置才會出現*/
+  left: 15px;/*設定位置*/
+  top: 65px;
+}
+.skills-text h4:after {
+ content:'';
+  width: 5px;
+  height: 100px;
+  background: #94c257;
+  position: absolute;/*要給位置才會出現*/
+  left: 10px;/*設定位置*/
+  top: 65px;
+}
+#pic2{
+  display:none;
+} 
+.skills-logo{
+  position:relative;
+  top:-17px;
+  background-color:#e0f8b9;
+}
+
+.skills-logo:before {
+ content:'';
+  width: 100px;
+  height: 5px;
+  background: #94c257;
+  position: absolute;/*要給位置才會出現*/
+  right: 0px;/*設定位置*/
+  bottom: -5px;
+}
+.skills-logo:after {
+ content:'';
+  width: 5px;
+  height: 100px;
+  background: #94c257;
+  position: absolute;/*要給位置才會出現*/
+  right: -5px;/*設定位置*/
+  bottom: -5px;
+}
+
+@media (max-width: 768px){/*小於786的情況*/
+#pic2{
+  display:block;
+} 
+ #pic1{
+  display:none;
+}  
+}
+/*skills*/
+/*works*/
+.works{
+  background-color:#daf6ff;
+  /*background:url(https://pic.pimg.tw/a852147tw/1549812972-3156317668_l.jpg) no-repeat center;*/
+  background-size:cover;
+  padding:40px 30px;
+}
+.works-text{
+  padding-left:30px;
+  padding-bottom: 10px;
+}
+.works-text h4{
+  font-size:50pt;
+  font-weight:bold;
+  font-family:Verdana;
+  color:#245ea1;
+}
+.works-text h4:after {
+ content:'';
+  width: 270px;
+  height: 5px;
+  background: #245ea1;
+  position: absolute;/*要給位置才會出現*/
+  left: 10px;/*設定位置*/
+  top: 65px;
+}
+.nav-tabs{
+  border-bottom: unset;
+}
+.nav-tabs li{
+  display:block;/*block視為區塊*/
+  position: relative;/*設為相對定位，讓藍色區塊是顯示已li為基準的絕對位置*/
+  padding: 12px 10px 0 10px ;
+  
+}
+#myTab{
+  overflow: hidden;
+}
+#myTab a{
+ color:#000;
+  font-weight:bold;
+  font-size:20px;
+  position: relative;/*設為相對定位*/
+  display: block;/*block視為區塊*/
+  
+}
+#myTab a:hover {
+ color:#000 !important;
+}
+#myTab>li::before {
+    content: '';
+    width: 0;
+    height: 15px;
+    background-color: #52a2ff;
+    position: absolute;
+    top: 60%;
+    left: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+#myTab>li:hover::before {
+    width: calc(100% - 20px);/*數值的運算*/
+}
+
+
+#myTabContent{
+  clear:both;
+  padding:20px 10px;
+  border:#52a2ff 4px solid; 
+  overflow:hidden;
+}
+#myTabContent p{
+  text-align:left;
+  color:#000;
+  
+}
+.col-md-6{
+  float:left;
+}
+
+.work_title{
+  font-size:20px;
+  font-weight:bold;
+  color:#245ea1 !important;
+  text-align:left;
+  border-left: 5px solid #245ea1;
+  padding-left: 8px;
+}
+.work_title::before{
+  content:'';
+  background-color:#245ea1;
+  width:5px;
+  height:20px;
+}
+#myTabContent img{
+  padding-bottom:20px;
+  padding-right:10px;
+}
+.button{
+    text-align:center !important;
+  padding:10px 0;
+}
+.gotoweb{
+  color:#245ea1 !important;
+  padding:8px;
+  border-radius: 10px;/*圓弧*/
+  border:#245ea1 2px solid; /*邊框*/
+  transition: 0.4s;
+}
+.gotoweb:hover {
+  color:#0b305c !important;
+  background-color:#90d7ff;
+  
+}
+.winnie-logo{
+  text-align:center;
+}
+/*#GDN p{
+  padding:0 50px;
+}*/
+@media (max-width: 1200px){/*小於1200的情況*/
+#GDN .gdn-big{
+  width:100% !important;
+ 
+  }
+}
+@media (max-width: 768px){/*小於1200的情況*/
+#GDN .gdn-small{
+  width:100% !important;
+ 
+  }
+}
+  @media (max-width: 480px){/*小於1200的情況*/
+#GDN .gdn-ssmall{
+  width:100% !important;
+ 
+  }
+}
+#others img {
+   /* width:50% !important;*/
+      float: left;
+  padding-right:0;
+  }
+.work_text{
+  /*text-align:left !important;*/
+  color:#000 !important;
+  font-weight:bold;
+}
+/*works*/
