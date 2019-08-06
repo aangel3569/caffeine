@@ -2660,7 +2660,8 @@ input, select, textarea {
 
 		/* Basic */
 .imgg{
-            	margin-left:6%;
+	width:60%;
+            	margin-left:20%;
             }
 			body, input, textarea, select {
 				font-size: 12pt;
@@ -2750,7 +2751,10 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
-
+.imgg{
+	width:100%;
+	margin-left:-1%;
+}
 		/* Basic */
 
 			html, body {

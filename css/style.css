@@ -1,10 +1,11 @@
 .demo{
     padding: 1em 0;
+    margin-left:5%;
 }
 .box{
     position: relative;
     perspective: 1000px;
-    width:70%;
+    width:60%;
 }
 .box .box-img{
     transform: rotateY(0);
@@ -36,7 +37,8 @@
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
-    padding-top:15%;
+        padding-top:-30%;
+
 }
  
 .box .description{
@@ -73,5 +75,18 @@
     .box{  margin-bottom:20px; }
 }
 @media only screen and (max-width: 479px) {
+    .demo{
+    padding: 1em 0;
+    margin-left:-20%;
+}
     .box .box-content{ padding: 20px; }
+    .box{
+    position: relative;
+    perspective: 1000px;
+    width:100%;
+}
+    .title{
+        margin-top:30%;
+
+    }
 }
