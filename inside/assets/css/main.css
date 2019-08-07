@@ -2423,80 +2423,72 @@ input, select, textarea {
 
 /* Context */
 
+	body,html{
+		width: 100%;
+		height: 100%;
+	}
+
 	.context {
 		position: relative;
 		display: flex;
+
 		width: 100%;  
 		height: 100%;
+
 		flex-direction: column;
+		align-items:stretch;
+		justify-content: space-between;
+	}
+
+	/* Teach */
+	
+	.teach {
+		display: flex;
+
+		height: 80%;
+
+		flex-direction: column;
+		flex-wrap: nowrap;
 		align-items: center;
 		justify-content: center;
 	}
 
-	@media screen and (max-width: 1920px) {
-		body,html{
-			width: 100%;  
-			height: 100%;
-		}
-		.context {
-			position: relative;
-			display: flex;
-			width: 100%;  
-			height: 100%;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		}
-	}
-
-/* Teach */
-/* 圖大小 寬960px 高975px */
-	.teach {
-		position: absolute;
-		width: 100%;
+	.teach > .classp {
 		height: 100%;
-		background-image: url("../../u1/U1-1.png");
-		background-position: center;
-		background-size: 50%;
-		background-repeat: no-repeat;
+		padding: 0;
+		margin: 0;
+		border: 0;
 	}
 
-	@media screen and (max-height: 960px) {
-		body,html{
-			width: 100%;
-			height: 100%;
-		}
-		.teach {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background-size: 80%;
-		}
+	/*Pager*/
+
+	.pager {
+		display: flex;
+
+		height: 10%;
+
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: end;
+		justify-content: space-around;
+	}
+	
+	.pager > .button1 {
+		height: 100%;
+		bottom: 0;
+		padding: 0;
+		margin: 0;
+		border: 0;
 	}
 
-	@media screen and (max-width: 830px) {
-		body,html{
-			width: 100%;
-			height: 100%;
-		}
-		.teach {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background-size: 80%;
-		}
+	/*title*/
+
+	.title {
+		height: 10%;
+		padding: 0;
+		margin: 0;
+		border: 0;
 	}
-
-/*Pager*/
-
-.next 
-{
-	position: relative;
-	font-size: 6em;
-	text-align: center;
-	color: #000;
-	margin-top: 30%;
-}
 
 /* Content */
 
