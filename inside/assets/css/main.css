@@ -2460,6 +2460,15 @@ input, select, textarea {
 		border: 0;
 	}
 
+	@media screen and (max-width: 1024px) {
+		.teach > .classp {
+			height: 50%;
+			padding: 0;
+			margin: 0;
+			border: 0;
+		}
+	}
+
 	/*Pager*/
 
 	.pager {
