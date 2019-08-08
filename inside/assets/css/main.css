@@ -2437,7 +2437,7 @@ input, select, textarea {
 
 		flex-direction: column;
 		align-items:stretch;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	/* Teach */
@@ -2445,7 +2445,7 @@ input, select, textarea {
 	.teach {
 		display: flex;
 
-		height: 80%;
+		height: 60%;
 
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -2461,12 +2461,18 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 1024px) {
-		.teach > .classp {
+
+		.teach {
 			height: 50%;
+		}
+
+		.teach > .classp {
+			height: 80%;
 			padding: 0;
 			margin: 0;
 			border: 0;
 		}
+
 	}
 
 	/*Pager*/
@@ -2504,9 +2510,92 @@ input, select, textarea {
 
 	.title {
 		height: 10%;
+
 		padding: 0;
 		margin: 0;
 		border: 0;
+
+		display: flex;
+
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.title > .t {
+		width: 90%;
+		height: 100%;
+		border-radius: 20px;
+		background: rgb(167, 110, 63);
+
+		display: flex;
+
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.t > div {
+		width: 33%;
+		height: 100%;
+
+		display: flex;
+
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-around;
+
+		color: #fff;
+	}
+	.text > .t1 {
+		font-size: 60px;
+		color: rgb(255, 231, 188);
+		font-weight: 900;
+	}
+	.b1 {
+		font-size: 30px;
+		transition: border 0.5s;
+		border-radius: 30px;
+		border:solid 2px rgb(167, 110, 63);
+	}
+	.b2 {
+		font-size: 30px;
+		transition: border 0.5s;
+		border-radius: 30px;
+		border:solid 2px rgb(167, 110, 63);
+	}
+	.b1:hover {
+		border:solid 2px rgb(177, 213, 255);
+	}
+	.b2:hover {
+		border:solid 2px rgb(177, 213, 255);
+	}
+
+	@media screen and (max-width:1280px){
+		.text > .t1 {
+			font-size: 50px;
+		}
+		.b1 {
+			font-size: 25px;
+		}
+		.b2 {
+			font-size: 25px;
+		}
+	}
+
+	@media screen and (max-width:760px) {
+		.text > .t1 {
+			font-size: 30px;
+		}
+		.b1 {
+			font-size: 15px;
+		}
+		.b2 {
+			font-size: 15px;
+		}
 	}
 
 /* Content */
